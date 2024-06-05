@@ -1,0 +1,63 @@
+.carousel-container {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.mask {
+    width: calc(600px * 4);
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease-out;
+}
+
+.box {
+    width: 600px;
+    height: 100%;
+}
+
+.carousel-controls {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-controls {
+   display: flex;
+}
+
+.bloc-btn-carrousel {
+    display: flex;
+}
+
+.btn-slides:hover {
+    background-color: green;
+}
+
+.carousel-controls div {
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.btn-slides {
+    width: 8px;
+    height: 8px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+.btn-controls div {
+    cursor: pointer;
+}
+
+div {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.active {
+    background-color: black;
+}

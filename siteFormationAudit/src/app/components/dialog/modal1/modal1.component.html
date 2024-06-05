@@ -1,0 +1,61 @@
+<form class="bloc-form" [formGroup]="form">
+    <p for="inscription-message" class="title-form">Inscrivez-vous pour profiter d'une réduction sur vos frais de
+        formation :</p>
+    <div class="bloc-champ">
+        <label>Nom</label>
+        <input type="text" id="nom" formControlName="nom" [class.champ-error]="errors['nom']"
+            [class.champ-margin]="errors['nom']" class="champ-form">
+    </div>
+    <div *ngIf="errors['nom']" class="msg-error">Le champ ne doit pas être vide</div>
+
+    <div class="bloc-champ">
+        <label>Prénom</label>
+        <input type="text" id="prenom" formControlName="prenom" class="champ-form"
+            [class.champ-error]="errors['prenom']">
+    </div>
+    <div *ngIf="errors['prenom']" class="msg-error">Le champ ne doit pas être vide</div>
+
+    <div class="bloc-champ">
+        <label>Ville de résidence</label>
+        <input type="text" id="ville" formControlName="ville" class="champ-form" [class.champ-error]="errors['ville']">
+    </div>
+    <div *ngIf="errors['ville']" class="msg-error">Le champ ne doit pas être vide</div>
+
+    <div class="toggle-switch">
+        <label> Etes vous employé chez Accenture</label>
+        <div>
+            <span>Non</span><mat-slide-toggle formControlName="accenture">Oui</mat-slide-toggle>
+        </div>
+        <div *ngIf="errors['accenture']" class="msg-error">Le champ ne doit pas être vide</div>
+    </div>
+
+    <div class="radio-group">
+        <div class="bloc-radio">
+            <label>En CDI</label>
+            <input type="radio" id="cdi" name="emploi" formControlName="emploi" value="cdi">
+        </div>
+
+        <div class="bloc-radio">
+            <label>En CDD</label>
+            <input type="radio" id="cdd" name="emploi" formControlName="emploi" value="cdd">
+        </div>
+
+        <div class="bloc-radio">
+            <label>En alternance</label>
+            <input type="radio" id="alternance" name="emploi" formControlName="emploi" value="alternance">
+        </div>
+        <div *ngIf="errors['emploi']" class="msg-error">Le champ ne doit pas être vide</div>
+    </div>
+    <div class="toggle-switch">
+        <label> De plus de 6 mois</label>
+        <div>
+            <span>Non</span><mat-slide-toggle formControlName="annee">Oui</mat-slide-toggle>
+        </div>
+        <div *ngIf="errors['annee']" class="msg-error">Le champ ne doit pas être vide</div>
+    </div>
+
+    <div class="button-group">
+        <button type="button" (click)="closeDialog()" class="btn-dialog btn-annuler">Annuler</button>
+        <button type="submit" (click)="onOkClick()" class="btn-dialog btn-valider">Valider</button>
+    </div>
+</form>

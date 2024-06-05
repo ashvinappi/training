@@ -1,0 +1,21 @@
+.style-menu {
+    background-color: #78909C;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    margin-bottom: 3em;
+}
+
+li:focus, li:hover {
+    color: rgb(249, 208, 131);
+}

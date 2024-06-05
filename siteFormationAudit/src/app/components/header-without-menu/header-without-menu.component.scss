@@ -1,0 +1,78 @@
+.head {
+    background-color: #78909C;
+    color: white;
+    width: 100%;
+    // height: 10%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+a.lien {
+    font-family: 'Yeseva One';
+    font-size: 2.5em;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+}
+
+.spacing {
+    margin-right: 6rem;
+}
+
+.icons {
+    height: 1em;
+}
+
+.part2{
+    display: flex;
+    margin-right: 20px;
+}
+
+.btn {
+    border-radius: 1em 1em 1em 1em;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+.btn.search {
+    background-color: transparent; 
+}
+
+.btn.cnx {
+    height: 30px;
+    width: 45%;
+    background-color: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn.cnx:focus, .btn.cnx:hover {
+    background-color: rgb(78, 131, 78);
+}
+.fa-user-circle {
+    width: 10px;
+    height: 10px;
+}
+.recherche {
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: transparent; 
+    border-bottom: 1px solid black
+}
+
+input::placeholder {
+    color: black
+}

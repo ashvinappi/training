@@ -1,0 +1,70 @@
+<div class="bloc-principal">
+
+    <div class="bloc-content">
+        <div class="breadcrumb">
+            <div><a routerLink="/home">Home</a></div>
+            <div><a routerLink="/exercice3" class="current-page">&nbsp; Exercice 3</a></div>
+        </div>
+
+        <h1 class="titre1">Exercice 3</h1>
+
+        <div class="bloc-principal-panel">
+            <div class="bloc-btn">
+                <div [class.activePanel]="openPanel === 0" class="btn" (click)="openPanel = 0" tabindex="-1"> Carrousel
+                </div>
+                <div [class.activePanel]="openPanel === 1" class="btn" (click)="openPanel = 1" tabindex="-1"> Accordéons
+                </div>
+            </div>
+            <div class="bloc-panel">
+                <div id="carrousel" *ngIf="openPanel === 0">
+                    <app-carousel></app-carousel>
+                </div>
+                <div id="accordeon" *ngIf="openPanel === 1" class="bloc-accordion">
+                    <button (click)="openDialog = true">Inscription</button>
+                    <app-dialog [open]="openDialog">
+                        <div class="modal-header">
+                            <h1 class="modal-title">INSCRIPTION</h1>
+                            <button (click)="openDialog = false">X</button>
+                        </div>
+                        <hr>
+                        <app-modal1 [openDialog]="openDialog" (closeDialogEvent)="closeDialogEvent()"></app-modal1>
+                    </app-dialog>
+
+                    <app-panel-accordion titre="Diaspositive 1" [open]="true">
+
+                        Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque
+                        vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio
+                        Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae
+                        consulares nobilitarunt et praefecturae.
+                    </app-panel-accordion>
+                    <app-panel-accordion titre="Diaspositive 2">
+                        Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque
+                        vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio
+                        Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae
+                        consulares nobilitarunt et praefecturae.
+                    </app-panel-accordion>
+                    <app-panel-accordion titre="Diaspositive 3">
+                        Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque
+                        vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio
+                        Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae
+                        consulares nobilitarunt et praefecturae.
+                    </app-panel-accordion>
+                    <app-panel-accordion titre="Diaspositive 4">
+                        Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque
+                        vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio
+                        Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae
+                        consulares nobilitarunt et praefecturae.
+                    </app-panel-accordion>
+                    <app-panel-accordion titre="Diaspositive 5">
+                        Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque
+                        vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio
+                        Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae
+                        consulares nobilitarunt et praefecturae.
+                    </app-panel-accordion>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,94 @@
+.bloc-principal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc-menu {
+    width: 12%;
+    background-color: #78909C;
+
+}
+
+.bloc-content {
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.current-page {
+    color: #FFDAB9;
+}
+
+.titre1 {
+    text-align: center;
+    font-family: 'Yeseva One';
+}
+
+.titre{
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-weight: bold;
+}
+
+.bloc-list-thematique {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 200px 10px 25px;
+}
+
+.bloc-information {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 51px;
+
+}
+
+.img {
+    width: 7em;
+    height: 8em;
+}
+
+.citation {
+    color: #8FAD88;
+    font-family: 'Yeseva One';
+    font-size: 1em;
+}
+
+.bloc-fin {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.img-acc {
+    width: 20em;
+    margin-right: 2em;
+}
+
+.point {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.position {
+    display: flex;
+    justify-content: flex-end;
+    color: #B0B0B0;
+}

@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <div class="bloc-btn-accordion">
+            <p>{{titre}}</p>
+            <!-- <button class="style-btn-accordion" *ngIf="!open" (click)="open=true"
+                [attr.aria-controls]="generateUniqueId()" [id]="generateUniqueId()">▲</button>
+            <button class="style-btn-accordion" *ngIf="open" (click)="open=false"
+                [attr.aria-controls]="generateUniqueId()" [id]="generateUniqueId()">▼</button> -->
+
+            <button class="style-btn-accordion" *ngIf="!open" (click)="open=true">▲</button>
+            <button class="style-btn-accordion" *ngIf="open" (click)="open=false">▼</button>
+        </div>
+    </div>
+    <div *ngIf="open" [id]="generateUniqueId()" class="contenu-accordion">
+        <ng-content></ng-content>
+    </div>
+</div>

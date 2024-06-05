@@ -1,0 +1,82 @@
+.bloc-principal {
+    width: 100%;
+
+}
+
+.bloc-content {
+    margin: 20px 0 20px 50px;
+}
+
+.breadcrumb{
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.current-page {
+    color: #FFDAB9;
+}
+
+.titre1 {
+    text-align: center;
+    font-family: 'Yeseva One';
+}
+
+.bloc-principal-panel {
+    width: 100%;
+    // margin: 20px;
+}
+
+.bloc-panel {
+    border: 1px solid black;
+    border-radius: 0 6px 6px 6px;
+    background-color: rgba(212, 203, 203, 0.429);
+    width: 95%;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 6px 6px 0 0;
+    padding: 5px;
+    width: 50%;
+}
+
+.bloc-btn {
+    width: 30%;
+    display: flex;
+}
+
+.activePanel {
+    background-color: green;
+}
+
+.bloc-accordion {
+    margin: 20px;
+    height: 400px;
+}
+
+#carrousel {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+ 
+}
+
+.modal-title {
+    margin: 0;
+    font-family: 'Yeseva One';
+}
+
+hr {
+border: 1px solid black;
+}

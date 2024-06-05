@@ -1,0 +1,15 @@
+.bloc-home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+app-footer {
+    display: flex;
+}
+
+app-content-home {
+    display: flex;
+    flex: 1;
+}

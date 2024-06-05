@@ -1,0 +1,35 @@
+<div class="carousel-container">
+    <div class="mask" [style.transform]="'translateX('+(-600*currentImage).toString()+'px)'">
+        <div class="box"><img src="./assets/images/img1.png" alt=""></div>
+        <div class="box"><img src="./assets/images/img2.png" alt=""></div>
+        <div class="box"><img src="./assets/images/img3.jpg" alt=""></div>
+        <div class="box"><img src="./assets/images/img4.png" alt=""></div>
+    </div>
+</div>
+
+
+<div class="bloc-btn-carrousel">
+    <div class="carousel-controls ">
+        <div (click)="goPrecedent()">◁</div>
+        <!-- <div>◁</div> -->
+
+        <div (click)="goImage(0)" class="btn-slides" [class.active]="currentImage===0"></div>
+        <div (click)="goImage(1)" class="btn-slides" [class.active]="currentImage===1"></div>
+        <div (click)="goImage(2)" class="btn-slides" [class.active]="currentImage===2"></div>
+        <div (click)="goImage(3)" class="btn-slides" [class.active]="currentImage===3"></div>
+
+        <div (click)="goSuivant()">▷</div>
+        <!-- <div>▷</div> -->
+
+    </div>
+
+    <!-- <div class="btn-controls">
+        <div>⏵</div>
+        <div>⏸</div>
+    </div> -->
+
+    <div class="btn-controls">
+        <div (click)="autoplay=true">⏵</div>
+        <div (click)="autoplay=false">⏸</div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="bloc-principal-panel">
+    <div class="bloc-btn">
+        <button [class.activePanel]="openPanel === 0" class="btn" (click)="openPanel = 0"> Carrousel</button>
+        <button [class.activePanel]="openPanel === 1" class="btn" (click)="openPanel = 1"> Accordéons</button>
+    </div>
+    <div class="bloc-panel">
+        <div id="carrousel" *ngIf="openPanel === 0">
+            <div>
+
+            </div>
+
+        </div>
+        <div id="accordeon" *ngIf="openPanel === 1">
+            <app-panel-accordion
+                contenu="Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae consulares nobilitarunt et praefecturae."></app-panel-accordion>
+            <app-panel-accordion
+                contenu="Hoc inmaturo interitu ipse quoque sui pertaesus excessit e vita aetatis nono anno atque vicensimo cum quadriennio imperasset. natus apud Tuscos in Massa Veternensi, patre Constantio Constantini fratre imperatoris, matreque Galla sorore Rufini et Cerealis, quos trabeae consulares nobilitarunt et praefecturae."></app-panel-accordion>
+            <!-- <h2>
+                <button aria-expanded="false" aria-controls="accordion1">Entête 1</button>
+            </h2>
+            <div id="accordion1">
+                [Panneau replié]
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="step-title">
+    <div class="container" aria-current="step">
+        <h1 data-step="1" title="Début de la démarche">
+            <span>
+                Début de la démarche</span>
+        </h1>
+
+    </div>
+</div>
+
+<div class="form-group" id="telMobileResponsable2Titre">
+    <label class="" for="telMobileResponsable2">
+        Numéro de téléphone mobile
+    </label>
+    <input type="text" class=" form-control" name="telMobileResponsable2" id="telMobileResponsable2" value=""
+        aria-describedby="help_telMobileResponsable2Help">
+    <small id="help_telMobileResponsable2Help" class="form-text text-muted">Exemple : +33 00 00 00 00 00<br>Seul un
+        numéros de téléphone français est accepté. Il pourra être utilisé pour vous transmettre une information en cas
+        de problème lors d’un examen. </small>
+</div>

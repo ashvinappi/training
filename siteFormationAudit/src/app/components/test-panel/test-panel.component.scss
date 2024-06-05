@@ -1,0 +1,26 @@
+.bloc-principal-panel {
+    width: 100%;
+    margin: 20px;
+}
+
+.bloc-panel {
+    border: 1px solid black;
+    border-radius: 0 6px 6px 6px;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 6px 6px 0 0;
+}
+
+.bloc-btn {
+    width: 20%;
+}
+.bloc-panel {
+    background-color: gray;
+    width: 50%;
+}
+
+.activePanel {
+    background-color: green;
+}

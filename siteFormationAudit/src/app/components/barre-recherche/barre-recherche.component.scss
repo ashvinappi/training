@@ -1,0 +1,25 @@
+.btn {
+    border-radius: 1em 1em 1em 1em;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn.search {
+    background-color: transparent; 
+}
+
+.recherche {
+    width: 60%;
+    border: none;
+    outline: none;
+    background-color: transparent; 
+    border-bottom: 1px solid black
+}
+
+.icons {
+    height: 1em;
+}
+
+input::placeholder {
+    color: black
+}

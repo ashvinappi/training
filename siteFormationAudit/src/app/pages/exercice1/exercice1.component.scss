@@ -1,0 +1,11 @@
+.bloc-principal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+app-content-exercice1 {
+    display: flex;
+    flex: 1;
+}

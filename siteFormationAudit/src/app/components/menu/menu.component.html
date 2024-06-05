@@ -1,0 +1,46 @@
+<div class="head">
+    <div class="part1">
+        <ul class="menu">
+            <li class="spacing">
+                <a routerLink="/home" class="lien">
+                    a11y.
+                </a>
+            </li>
+            <li class="menu-item" (mouseenter)="showSubmenu = true" (mouseleave)="showSubmenu = false"
+                (click)="toggleSubmenu()">
+                <a routerLink="/home" class="buttons">
+                    Menu <span>▼</span>
+                </a>
+                <div class="sub-menu" *ngIf="showSubmenu" (mouseenter)="showSubmenu = true"
+                    (mouseleave)="showSubmenu = false">
+                    <ul>
+                        <li>
+                            <a routerLink="/exercice1" class="buttons">
+                                Exercice 1
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/exercice2" class="buttons">
+                                Exercice 2
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/exercice3" class="buttons">
+                                Exercice 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="part2">
+        <app-barre-recherche></app-barre-recherche>
+        <button type="submit" class="btn cnx">
+            <mat-icon aria-label="log in" aria-hidden="false">account_circle</mat-icon>
+            Connexion
+        </button>
+    </div>
+
+</div>
