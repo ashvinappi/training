@@ -9,3 +9,8 @@ h1 {
     font-size: 3em;
 }
 
+@media screen and (max-width:768px) {
+    .style-body {
+        margin: 30px;
+    }
+}

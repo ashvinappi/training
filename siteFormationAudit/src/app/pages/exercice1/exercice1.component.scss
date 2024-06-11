@@ -9,3 +9,14 @@ app-content-exercice1 {
     display: flex;
     flex: 1;
 }
+.header-whith-menu {
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .header-whithout-menu {
+        display: inline;
+    }
+    .header-whith-menu {
+        display: block;
+    }
+}

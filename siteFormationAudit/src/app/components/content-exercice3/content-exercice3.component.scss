@@ -80,3 +80,22 @@ a {
 hr {
 border: 1px solid black;
 }
+
+.btn-close {
+    border-radius: 30px;
+}
+
+.btn-close:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .btn-close {
+        font-size: x-large;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}

@@ -67,3 +67,15 @@
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
+
+@media screen and (max-width:768px) {
+  .champ-form {
+    margin-bottom: 28px;
+    margin-right: 6px;
+  }
+
+  .toggle-switch {
+    margin: 10px 0 20px 0px;
+  }
+
+}

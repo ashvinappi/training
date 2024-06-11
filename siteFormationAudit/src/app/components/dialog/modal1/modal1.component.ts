@@ -63,7 +63,7 @@ export class Modal1Component {
       }
     } else {
       console.log(this.form.value);
-      alert('form valid envoyée');
+      alert('Formulaire envoyé');
       this.closeDialog();
     }
   }

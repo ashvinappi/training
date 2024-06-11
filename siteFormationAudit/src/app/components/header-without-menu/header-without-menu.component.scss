@@ -76,3 +76,12 @@ ul {
 input::placeholder {
     color: black
 }
+
+.menu2 {
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .head {
+        display: none;
+    }
+}

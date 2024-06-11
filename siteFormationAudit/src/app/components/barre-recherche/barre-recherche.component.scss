@@ -13,7 +13,7 @@
     border: none;
     outline: none;
     background-color: transparent; 
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
 
 .icons {
@@ -22,4 +22,14 @@
 
 input::placeholder {
     color: black
+}
+
+@media screen and (max-width:768px) {
+    .recherche {
+        font-size: 1.3em;
+    }
+    
+    .icons {
+        height: 1.5em;
+    }
 }

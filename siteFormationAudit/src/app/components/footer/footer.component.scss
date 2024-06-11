@@ -39,3 +39,10 @@ p {
     padding: 0;
     // margin-bottom: 2px;
 }
+
+@media screen and (max-width:768px) {
+    .direction {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

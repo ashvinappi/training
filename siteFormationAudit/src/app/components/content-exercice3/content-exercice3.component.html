@@ -2,7 +2,7 @@
 
     <div class="bloc-content">
         <div class="breadcrumb">
-            <div><a routerLink="/home">Home</a></div>
+            <div><a routerLink="/home">Home ></a></div>
             <div><a routerLink="/exercice3" class="current-page">&nbsp; Exercice 3</a></div>
         </div>
 
@@ -18,17 +18,18 @@
             <div class="bloc-panel">
                 <div id="carrousel" *ngIf="openPanel === 0">
                     <app-carousel></app-carousel>
-                </div>
-                <div id="accordeon" *ngIf="openPanel === 1" class="bloc-accordion">
-                    <button (click)="openDialog = true">Inscription</button>
                     <app-dialog [open]="openDialog">
                         <div class="modal-header">
                             <h1 class="modal-title">INSCRIPTION</h1>
-                            <button (click)="openDialog = false">X</button>
+                            <button (click)="openDialog = false" class="btn-close">
+                                X
+                            </button>
                         </div>
                         <hr>
                         <app-modal1 [openDialog]="openDialog" (closeDialogEvent)="closeDialogEvent()"></app-modal1>
                     </app-dialog>
+                </div>
+                <div id="accordeon" *ngIf="openPanel === 1" class="bloc-accordion">
 
                     <app-panel-accordion titre="Diaspositive 1" [open]="true">
 

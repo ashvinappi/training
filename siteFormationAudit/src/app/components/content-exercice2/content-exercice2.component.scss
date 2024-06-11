@@ -7,7 +7,6 @@
 .bloc-menu {
     width: 12%;
     background-color: #78909C;
-
 }
 
 .bloc-content {
@@ -134,4 +133,27 @@ button {
     cursor: pointer;
     outline: inherit;
     /* Ajoutez d'autres styles personnalisés au besoin */
+}
+
+@media screen and (max-width:768px) {
+    .bloc-chiffres {
+        display: block;
+    }
+
+    .bloc-tableau {
+        margin-bottom: 20px;
+    }
+
+    .bloc-video {
+        margin-left: 0;
+    }
+
+    .bloc-menu {
+        display: none;
+    }
+
+    .bloc-content {
+        margin: 10px 0 10px 20px;
+        width: 100%;
+    }
 }

@@ -92,3 +92,31 @@ p {
     justify-content: flex-end;
     color: #B0B0B0;
 }
+
+.menu1 {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .bloc-menu {
+        display: none;
+    }
+
+    .bloc-list-thematique {
+        margin: 0;
+    }
+
+    .bloc-fin {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-acc {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .bloc-content {
+        width: 100%;
+    }
+}

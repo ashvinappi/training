@@ -13,7 +13,7 @@ import { Subject } from 'rxjs';
 })
 export class ContentExercice3Component {
   openPanel = 0;
-  openDialog = false;
+  openDialog = true;
   closeDialogEvent() {
     this.openDialog = false;
   }

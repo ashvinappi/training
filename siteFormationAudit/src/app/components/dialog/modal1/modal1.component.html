@@ -28,31 +28,33 @@
         </div>
         <div *ngIf="errors['accenture']" class="msg-error">Le champ ne doit pas être vide</div>
     </div>
+    <ng-container *ngIf="form.get('accenture')?.value">
+        <div class="radio-group">
+            <div class="bloc-radio">
+                <label>En CDI</label>
+                <input type="radio" id="cdi" name="emploi" formControlName="emploi" value="cdi">
+            </div>
 
-    <div class="radio-group">
-        <div class="bloc-radio">
-            <label>En CDI</label>
-            <input type="radio" id="cdi" name="emploi" formControlName="emploi" value="cdi">
-        </div>
+            <div class="bloc-radio">
+                <label>En CDD</label>
+                <input type="radio" id="cdd" name="emploi" formControlName="emploi" value="cdd">
+            </div>
 
-        <div class="bloc-radio">
-            <label>En CDD</label>
-            <input type="radio" id="cdd" name="emploi" formControlName="emploi" value="cdd">
+            <div class="bloc-radio">
+                <label>En alternance</label>
+                <input type="radio" id="alternance" name="emploi" formControlName="emploi" value="alternance">
+            </div>
+            <div *ngIf="errors['emploi']" class="msg-error">Le champ ne doit pas être vide</div>
         </div>
+        <div class="toggle-switch">
+            <label> De plus de 6 mois</label>
+            <div>
+                <span>Non</span><mat-slide-toggle formControlName="annee">Oui</mat-slide-toggle>
+            </div>
+            <div *ngIf="errors['annee']" class="msg-error">Le champ ne doit pas être vide</div>
+        </div>
+    </ng-container>
 
-        <div class="bloc-radio">
-            <label>En alternance</label>
-            <input type="radio" id="alternance" name="emploi" formControlName="emploi" value="alternance">
-        </div>
-        <div *ngIf="errors['emploi']" class="msg-error">Le champ ne doit pas être vide</div>
-    </div>
-    <div class="toggle-switch">
-        <label> De plus de 6 mois</label>
-        <div>
-            <span>Non</span><mat-slide-toggle formControlName="annee">Oui</mat-slide-toggle>
-        </div>
-        <div *ngIf="errors['annee']" class="msg-error">Le champ ne doit pas être vide</div>
-    </div>
 
     <div class="button-group">
         <button type="button" (click)="closeDialog()" class="btn-dialog btn-annuler">Annuler</button>

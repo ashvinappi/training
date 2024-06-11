@@ -89,3 +89,37 @@ ul {
     width: 10px;
     height: 10px;
 }
+
+
+@media screen and (max-width:768px) {
+    .head {
+        display: block;
+    }
+
+    .part1 {
+        padding: 10px;
+    }
+
+    .part2 {
+        padding: 10px;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sub-menu {
+        width: 25%;
+    }
+
+    .menu{
+        margin: 0;
+    }
+
+    .btn.cnx {
+        font-size: 1.3em;
+    }
+
+    a {
+        font-size: 1.3em;
+    }
+}
